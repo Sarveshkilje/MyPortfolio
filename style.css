@@ -27,7 +27,7 @@ header {
     width: 100%;
     z-index: 100;
 }
-@media (max-width:426px){
+@media (max-width:640px){
     header {
         /* display: none !important; */
     }
@@ -36,7 +36,7 @@ header nav {
     display: flex;
     gap: 30px;
 }
-@media (max-width:426px){
+@media (max-width:640px){
     header nav {
         display: flex;
         gap: 15px;
@@ -58,7 +58,7 @@ header nav a {
 font-size: 24px;
     }
 }
-@media (max-width:426px){
+@media (max-width:640px){
     header nav a {
     padding: 8px 10px;
     }
@@ -79,7 +79,7 @@ header nav:hover>a:not(:hover) {
         font-size: 2.2em  !important;
     }
 }
-@media (max-width:426px){
+@media (max-width:640px){
     nav {
         display: none !important;
     }
@@ -275,7 +275,7 @@ header nav:hover>a:not(:hover) {
     width: 100%;
     pointer-events: none;
 }
-@media (max-width:426px){
+@media (max-width:640px){
     .home img {
         position: absolute;
         bottom: 0;
@@ -370,7 +370,7 @@ p{
     display: flex;
     justify-content: flex-end;
 }
-@media (max-width:426px){
+@media (max-width:640px){
     .intro_main {
         display: flex;
         justify-content: center;
@@ -386,7 +386,7 @@ p{
     bottom: -17%;
     left: 0%;
 }
-@media (max-width:426px){
+@media (max-width:640px){
     .intro-left{
         width: 100%;
         position: absolute;
@@ -407,7 +407,7 @@ p{
 .intro-right{
     width: 50%;
 }
-@media (max-width:426px){
+@media (max-width:640px){
     .intro-right{
         width: 100%;
     }
@@ -530,7 +530,7 @@ font-size: 2em;
     box-sizing: border-box;
     flex-basis: 50%;
   }
-  @media (max-width: 426px){
+  @media (max-width: 640px){
   .project_left {
       display: none !important;
   }
@@ -545,7 +545,7 @@ font-size: 2em;
   .project_sub-title {
     text-align: center;
   }
-  @media (min-width:426px){
+  @media (min-width:640px){
     .project_left_mv{
         display: none;
     }
@@ -561,7 +561,7 @@ font-size: 2em;
     box-sizing: border-box;
     flex-basis: 50%;
   }
-  @media (max-width: 426px){
+  @media (max-width: 640px){
     .project_right{
       flex-basis: 100%;
     }
@@ -604,11 +604,11 @@ font-size: 2em;
     }
   }
   .card:nth-child(1) {
-    background: rgb(64, 122, 255);
+    background: rgb(247, 92, 208);
     z-index: 4;
   }
 .card:nth-child(2) {
-    background: rgb(247, 92, 208);
+    background: rgb(64, 122, 255);
     z-index: 3;
   }
  .card:nth-child(3) {
@@ -625,7 +625,7 @@ font-size: 2em;
     font-size: 2.5em;
     font-weight: 700;
   }
-  @media (max-width: 426px){
+  @media (max-width: 640px){
     .project_content {
         font-size: 2em;
       }
@@ -680,7 +680,7 @@ font-size: 2em;
         font-size: 1.3em;
     }
 }
-@media (max-width: 426px){
+@media (max-width: 640px){
     .project_link{
         width: 6.5em;
 font-size: 0.8em;
@@ -1172,7 +1172,7 @@ form{
     overflow: hidden;
     position: relative;
 }
-@media (max-width: 426px) {
+@media (max-width: 640px) {
     .form {
         grid-template-columns: 1fr;
     }
