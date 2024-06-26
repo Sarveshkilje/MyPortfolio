@@ -396,7 +396,7 @@
                     <div class="the-card">
                         <div class="front-card">
                             <div class="img-skill-container">
-                                <img src="./img/logos/boot-strap.png">
+                                <img src="./img/logos/tailwind.png">
                             </div>
                         </div>
                         <div class="back-card">
@@ -489,27 +489,28 @@
 
         </div>
         <div class="contact-form">
-            <form action="index.html" autocomplete="off">
-                <h2 class="">Connect us</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3ff93700-f7b4-4401-b8e2-86460997b4f6">
+                <h2>Connect us</h2>
                 <div class="input-container focus">
-                  <input type="text" name="name" class="input">
+                  <input type="text" name="name" class="input" required>
                   <span>Username</span>
                 </div>
                 <div class="input-container">
-                  <input type="email" name="email" class="input">
+                  <input type="email" name="email" class="input" required>
                   <span>Email</span>
                 </div>
                 <div class="input-container">
-                  <input type="number" name="phone" required class="input">
+                  <input type="number" name="phone" class="input" required>
                   <span>Phone</span>
                 </div>
                 <div class="input-container textarea">
-                  <textarea name="message" class="input"></textarea>
+                  <textarea name="message" class="input" required></textarea>
                   <span>Message</span>
                 </div>
-                <a href="" class="project_link" style="font-size: 1em; width:8em">Submit
-                </a>
+                <button type="submit" class="project_link" style="font-size: 1em; width:8em; border: none; cursor:pointer;">Submit</button>
               </form>
+              
               <div class="social-media">
                 <div class="social-icons">
                     <a href="https://www.facebook.com/share/JNoJUfu19bfQx1ck/?mibextid=qi2Omg" target="_blank">
@@ -524,6 +525,9 @@
                     <a href="https://github.com/Sarveshkilje" target="_blank">
                         <img src="img/logos/github.png">
                     </a>
+                    <a href="https://x.com/SarveshKil53278?t=r45rrutKLXEBZFywfOAoeA&s=09" target="_blank">
+                        <img src="img/logos/twitter.png">
+                    </a>
                 </div>
               </div>
         </div>
@@ -537,6 +541,23 @@
     </p>
 </div>
     <script src="script.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail(){
+            Email.send({
+              Host : "smtp.elasticemail.com",
+              Username : "username",
+              Password : "password",
+              To : 'them@website.com',
+              From : "you@isp.com",
+              Subject : "This is the subject",
+              Body : "And this is the body"
+          }).then(
+            message => alert(message)
+          );
+          }
+    </script> -->
     <script>
         ScrollReveal({
              reset: true,
