@@ -573,7 +573,7 @@ font-size: 2em;
   }
   .center .card {
     width: 300px;
-    height: 300px;
+    height: 400px;
     box-sizing: border-box;
     padding: 35px;
     border-radius: 6mm;
@@ -588,23 +588,26 @@ font-size: 2em;
   @media (min-width:1280px){
     .center .card {
         width: 350px;
-        height: 400px;
+        height: 450px;
     }
 }
 @media (max-width: 940px) and (min-width:640px){
     .center .card {
         width: 250px;
-        height: 250px;
+        height: 375px;
+        padding: 24px;
     }
 }
   @media (max-width: 640px){
     .center .card {
         width: 220px;
-        height: 250px;
+        padding: 20px;
+        height: 325px;
     }
   }
   .card:nth-child(1) {
-    background: rgb(247, 92, 208);
+    background: rgb(53, 52, 54);
+    /* color: rgb(252, 0, 0); */
     z-index: 4;
   }
 .card:nth-child(2) {
@@ -612,22 +615,39 @@ font-size: 2em;
     z-index: 3;
   }
  .card:nth-child(3) {
-    background: rgb(255, 170, 59);
+    background: rgb(1,179,192);
     z-index: 2;
   }
 .card:nth-child(4) {
     background: rgb(255, 33, 33);
     z-index: 1;
   }
-
+.card img{
+    width: 250px;
+    height: 175px;
+    margin: 10px 0px;
+    border: 2px solid white;
+}
+@media (max-width: 1025px){
+    .card img {
+        width: 200px;
+      }
+  }
+@media (max-width: 640px){
+    .card img {
+        width: 175px;
+        height: 125px;
+        margin: 0px;
+      }
+  }
  .project_content {
     font-family: "Montaga", serif;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
   }
   @media (max-width: 640px){
     .project_content {
-        font-size: 2em;
+        font-size: 1.5em;
       }
   }
   .card.active {
