@@ -31,7 +31,7 @@ function rotateCards() {
   let angle = 0;
   cards.forEach((card) => {
     if (card.classList.contains("active")) {
-      card.style.transform = `translate(-50%, -120vh) rotate(-48deg)`;
+      card.style.transform = `translate(-50%, -130vh) rotate(-48deg)`;
     } else {
       card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
       angle = angle - 10;
@@ -127,3 +127,13 @@ function onClickMenu() {
   document.getElementById("menu").classList.toggle("icon");
   document.getElementById("nav").classList.toggle("change");
 }
+
+document.getElementById('downloadButton').addEventListener('click', function() {
+  const url = 'c:\Users\sysin\Downloads\CV (2).pdf'; // Replace with the URL to your CV file
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'CV.pdf'; // This is the name with which the file will be downloaded
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
