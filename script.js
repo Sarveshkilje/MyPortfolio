@@ -137,3 +137,16 @@ document.getElementById('downloadButton').addEventListener('click', function() {
   a.click();
   document.body.removeChild(a);
 });
+
+// pop up image
+
+// Function to open the popup with the image
+function openPopup(imageSrc) {
+  document.getElementById('popupImage').src = imageSrc;
+  document.getElementById('popup').style.display = 'flex';
+}
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}

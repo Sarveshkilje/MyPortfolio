@@ -547,16 +547,23 @@
                     <h2>
                         certification
                     </h2>
-                    <img src="">
-                    <p>
+                    <img class="certificate" src="./img/certificate.jpeg" height="175px" width="250px"
+                   >
 
+                    <p>
+                       Front end development HTML to React JS by<br>
+                        <strong>CodeWithRandom.dev</strong><br>
                     </p>
-                    <button class="project_link" style="border: none;">certificate
+                    <button  onclick="openPopup('./img/certificate.jpeg')"class="project_link" style="border: none;" >certificate
                     </button>
                 </fieldset>
 
             </div>
         </section>
+
+        <div id="popup" class="popup" onclick="closePopup()">
+            <img id="popupImage" src="./img/certificate.jpeg" alt="Popup Image">
+        </div>
         <!-- <section class="get-in-touch">
 
         </section> -->
@@ -675,7 +682,7 @@
             ScrollReveal().reveal('.social-icons',{delay: 300});
             ScrollReveal().reveal('.experience-box ',{delay: 300, origin:'left'});
             ScrollReveal().reveal('.certification-box',{delay: 300, origin:'left'});
-            ScrollReveal().reveal('.education-box, ',{delay: 300, origin:'right'});
+            ScrollReveal().reveal('.education-box ',{delay: 300, origin:'right'});
     </script>
 </body>
 </html>
